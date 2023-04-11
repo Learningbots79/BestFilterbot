@@ -1,0 +1,38 @@
+services:
+  # A Docker web service
+  - type: web
+    name: FilterBot
+    env: python
+    startCommand: python3 main.py
+    buildCommand: pip3 install -U -r requirements.txt
+    repo: https://github.com/PR0FESS0R-99/Filter-Bot # optional
+    region: oregon # optional (defaults to oregon)
+    plan: free # optional (defaults to starter)
+    branch: Professor-99 # optional (defaults to master)
+    numInstances: 1 # optional (defaults to 1)
+    healthCheckPath: /
+    envVars:
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMINS
+        sync: false
+      - key: DATABASE_URI
+        sync: false
+      - key: BOT_PICS
+        sync: false
+      - key: UPDATE_CHANNEL
+        sync: false
+      - key: SUPPORT_CHAT
+        sync: false
+      - key: START_TXT
+        sync: false
+      - key: AUTO_DELETE
+        sync: false
+      - key: AUTO_DELETE_SECOND
+        sync: false
+      - key: WEBHOOK
+        sync: false
