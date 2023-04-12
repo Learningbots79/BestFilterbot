@@ -291,7 +291,7 @@ async def give_filter(client,message):
                                 )
                                 await asyncio.sleep(AUTO_DELETE_SECOND)
                                 await delete.delete()
-                            else
+                            else:
                                 button = eval(btn)
                                 await message.reply_text(
                                     reply_text,
