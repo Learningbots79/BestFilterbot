@@ -1,6 +1,6 @@
 ## Filter-Bot
 
-![github card](https://github-readme-stats.vercel.app/api/pin/?username=PR0FESS0R-99&repo=Filter-Bot&theme=dark)
+![github card](https://github-readme-stats.vercel.app/api/pin/?username=PR0FESS0R-99&repo=FilterBot&theme=dark)
 
 - [x] An advanced Telegram Filter Bot with nearly unlimitted filters!</b>
 
@@ -103,7 +103,7 @@ Read [this](https://github.com/PR0FESS0R-99/Filter-Bot/blob/Professor-99/variabl
     Watch Deploying Tutorial...
 </a></p>
 
-<p><a href="https://render.com/deploy?repo=https://github.com/Pr0fess0r-99/Filter-Bot">
+<p><a href="https://render.com/deploy?repo=https://github.com/Pr0fess0r-99/FilterBot">
   <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy">
 </a></p>
 </details>
