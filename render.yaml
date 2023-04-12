@@ -5,7 +5,7 @@ services:
     env: python
     startCommand: python3 main.py
     buildCommand: pip3 install -U -r requirements.txt
-    repo: https://github.com/PR0FESS0R-99/Filter-Bot # optional
+    repo: https://github.com/PR0FESS0R-99/FilterBot # optional
     region: oregon # optional (defaults to oregon)
     plan: free # optional (defaults to starter)
     branch: Professor-99 # optional (defaults to master)
