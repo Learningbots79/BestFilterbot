@@ -12,7 +12,6 @@ async def addconnection(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
         return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
-
     chat_type = message.chat.type
 
     if chat_type == enums.ChatType.PRIVATE:
@@ -60,7 +59,7 @@ async def addconnection(client, message):
                     quote=True,
                     parse_mode=enums.ParseMode.MARKDOWN
                 )
-                if chat_type in ["group", "supergroup"]:
+                if chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
                     await client.send_message(
                         userid,
                         f"Connected to **{title}** !",
@@ -105,7 +104,6 @@ async def deleteconnection(client, message):
             await message.reply_text("Successfully disconnected from this chat", quote=True)
         else:
             await message.reply_text("This chat isn't connected to me!\nDo /connect to connect.", quote=True)
-
 
 @Client.on_message(filters.private & filters.command(["connections"]))
 async def connections(client, message):
