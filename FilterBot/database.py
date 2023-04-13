@@ -43,6 +43,19 @@ class Database:
         except:
             print('Couldnt save, check your db')
 
+    async def get_filters(self, group_id):
+        mycol = self.client1[str(group_id)]
+
+        texts = []
+        query = mycol.find()
+        try:
+            for file in query:
+                text = file['text']
+                texts.append(text)
+        except:
+            pass
+        return texts
+
     async def find_filter(self, group_id, name):
         mycol = self.client1[str(group_id)]
     
@@ -124,16 +137,16 @@ class Database:
 
         data = {'_id': user_id, 'group_details' : [group_details], 'active_group' : group_id}
     
-        if mycol.count_documents( {"_id": user_id} ) == 0:
+        if self.client2.count_documents( {"_id": user_id} ) == 0:
             try:
-                mycol.insert_one(data)
+                self.client2.insert_one(data)
                 return True
             except:
                 print('Some error occured!')
 
         else:
             try:
-                mycol.update_one({'_id': user_id}, { "$push": {"group_details": group_details}, "$set": {"active_group" : group_id} })
+                self.client2.update_one({'_id': user_id}, { "$push": {"group_details": group_details}, "$set": {"active_group" : group_id} })
                 return True
             except:
                 print('Some error occured!')
