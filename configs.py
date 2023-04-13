@@ -54,13 +54,13 @@ if bool(environ.get("WEBHOOK", False)):
 
     DISCONNECT_COMMAND = environ.get("DISCONNECT_CMD", "disconnect")
 
-    BOT_PICS = (environ.get('BOT_PICS', "mo tech")).split()
+    BOT_PICS = (environ.get('BOT_PICS', "motech")).split()
 
     FORCE_SUB = environ.get("UPDATE_CHANNEL", "")
 
     SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "MoTechGroup")
 
-    START_TXT = environ.get("START_MESSAGE", StartTxT)
+    START_TXT = environ.get("START_TXT", StartTxT)
 
     HELP_TXT = environ.get("HELP_MESSAGE", HelpTxT)
 
