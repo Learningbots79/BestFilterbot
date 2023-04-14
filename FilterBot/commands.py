@@ -47,7 +47,7 @@ async def aboutCMD(client: FilterBot, message: Message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.first_name, message.from_user.id)
 
-    keyboard = [[ InlineKeyboardButton('Tutorial', url='t.me/mo_tech_yt'),
+    keyboard = [[ InlineKeyboardButton('Tutorial', url='https://youtu.be/hDGgPNgjo9o'),
                    InlineKeyboardButton('Repo', url='https://github.com/PR0FESS0R-99/FilterBot') ],
                 [ InlineKeyboardButton('Home', callback_data='main#start'),
                   InlineKeyboardButton('Help', callback_data='main#help') ]]
@@ -82,7 +82,7 @@ async def maincallback(client: FilterBot, message):
         await message.message.edit(text=HelpTxT, reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True)
 
     elif type == "about":
-        keyboard = [[ InlineKeyboardButton('Tutorial', url='t.me/mo_tech_yt'),
+        keyboard = [[ InlineKeyboardButton('Tutorial', url='https://youtu.be/hDGgPNgjo9o'),
                        InlineKeyboardButton('Repo', url='https://github.com/PR0FESS0R-99/FilterBot') ],
                     [ InlineKeyboardButton('Home', callback_data='main#start'),
                       InlineKeyboardButton('Help', callback_data='main#help') ]]
