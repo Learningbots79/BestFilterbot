@@ -99,7 +99,7 @@ Read [this](https://github.com/PR0FESS0R-99/Filter-Bot/blob/Professor-99/variabl
 
 <details><summary>Deploy To Rander</summary>
 <br>
-<p><a href="https://youtu.be/">
+<p><a href="https://youtu.be/hDGgPNgjo9o">
     Watch Deploying Tutorial...
 </a></p>
 
@@ -107,6 +107,3 @@ Read [this](https://github.com/PR0FESS0R-99/Filter-Bot/blob/Professor-99/variabl
   <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy">
 </a></p>
 </details>
-
-
-
