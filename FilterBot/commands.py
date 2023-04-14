@@ -10,8 +10,9 @@ async def startCMD(client: FilterBot, message: Message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.first_name, message.from_user.id)
 
+    bot = await client.get_me()
     keyboard = [[
-      InlineKeyboardButton('Add Me To Your Chat', url="t.me/mo_tech_Yt")
+      InlineKeyboardButton('Add Me To Your Chat', url=f"https://t.me/{bot.username}?startgroup=true")
       ],[
       InlineKeyboardButton('Help', callback_data='main#help'),
       InlineKeyboardButton('About', callback_data='main#about')
@@ -69,7 +70,8 @@ async def maincallback(client: FilterBot, message):
         return
 
     if type == "start":
-        keyboard = [[ InlineKeyboardButton('Add Me To Your Chat', url="t.me/mo_tech_Yt") ],
+        bot = await client.get_me()
+        keyboard = [[ InlineKeyboardButton('Add Me To Your Chat', url=f"t.me/{bot.username}?startgroup=true") ],
                     [ InlineKeyboardButton('Help', callback_data='main#help'),
                       InlineKeyboardButton('About', callback_data='main#about') ],
                     [ InlineKeyboardButton('Update', url='t.me/mo_tech_yt'),
