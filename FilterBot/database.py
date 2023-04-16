@@ -1,3 +1,4 @@
+import pyrogram
 from pymongo import MongoClient
 from configs import DATABASE_URI, DATABASE_NAME
 
@@ -73,7 +74,7 @@ class Database:
         except:
             return None, None, None, None
 
-    async def delete_filter(self, pyrogram, message, text, group_id):
+    async def delete_filter(self, message, text, group_id):
         mycol = self.client1[str(group_id)]
     
         myquery = {'text':text }
