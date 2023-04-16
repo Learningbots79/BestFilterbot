@@ -1,4 +1,4 @@
-import ast
+import ast, pyrogram 
 from pyrogram import filters, Client, enums
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from FilterBot.database import db
