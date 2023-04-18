@@ -1,5 +1,7 @@
+from aiohttp import web
+from route import web_server
 from pyrogram import Client, __version__
-from configs import API_ID, API_HASH, BOT_TOKEN, LOGGER
+from configs import API_ID, API_HASH, BOT_TOKEN, LOGGER, PORT
 
 class FilterBot(Client):
 
@@ -13,6 +15,10 @@ class FilterBot(Client):
         await super().start()
         me = await self.get_me()
         self.LOGGER(__name__).info(f"{me.first_name} with for Pyrogram v{__version__} started on {me.username}.")
+
+        app = web.AppRunner(await web_server())
+        await app.setup()       
+        await web.TCPSite(app, "0.0.0.0", PORT).start()
 
     async def stop(self, *args):
         await super().stop()
