@@ -69,6 +69,9 @@ if bool(environ.get("WEBHOOK", False)):
     AUTO_DELETE = bool(environ.get("AUTO_DELETE", True))
 
     AUTO_DELETE_SECOND = int(environ.get("AUTO_DELETE_SECOND", 300))
+
+    PORT = environ.get('PORT', '8080')
+
 else:
 
     print("WEBHOOK is Disabled 😴")
