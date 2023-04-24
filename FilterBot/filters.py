@@ -322,8 +322,7 @@ async def give_filter(client,message):
                                 caption=reply_text or "",
                                 reply_to_message_id=reply_id
                             )
-                            await asyncio.sleep(AUTO_DELETE_SECOND)
-                            await delete.delete()
+                            
                     else:
                         if AUTO_DELETE:
                             button = eval(btn)
