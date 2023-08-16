@@ -58,7 +58,7 @@ if bool(environ.get("WEBHOOK", False)):
 
     FORCE_SUB = environ.get("UPDATE_CHANNEL", "")
 
-    SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "MoTechGroup")
+    SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "official_learning_bots_Support")
 
     START_TXT = environ.get("START_TXT", StartTxT)
 
