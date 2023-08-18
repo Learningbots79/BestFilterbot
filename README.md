@@ -103,7 +103,7 @@ Read [this](https://github.com/PR0FESS0R-99/Filter-Bot/blob/Professor-99/variabl
     Watch Deploying Tutorial...
 </a></p>
 
-<p><a href="https://render.com/deploy?repo=https://github.com/Pr0fess0r-99/FilterBot">
+<p><a href="https://render.com/deploy?repo=https://github.com/Learningbots79/BestFilterbot">
   <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy">
 </a></p>
 </details>
