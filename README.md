@@ -99,7 +99,7 @@ Read [this](https://github.com/PR0FESS0R-99/Filter-Bot/blob/Professor-99/variabl
 
 <details><summary>Deploy To Rander</summary>
 <br>
-<p><a href="https://youtu.be/hDGgPNgjo9o">
+<p><a href="https://youtu.be/vbloWcdxjxg">
     Watch Deploying Tutorial...
 </a></p>
 
