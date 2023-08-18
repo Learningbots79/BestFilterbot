@@ -33,7 +33,7 @@ if bool(environ.get("WEBHOOK", False)):
         print(f"DATABASE_URI Invalid: \n\nLogs: {e}")
 
     try:
-        DATABASE_NAME = environ.get("DATABASE_NAME", "Muhammed")
+        DATABASE_NAME = environ.get("DATABASE_NAME", "")
     except Exception as e:
         print(f"DATABASE_NAME Invalid: \n\nLogs: {e}")
 
