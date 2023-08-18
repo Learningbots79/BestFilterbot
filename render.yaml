@@ -5,7 +5,7 @@ services:
     env: python
     startCommand: python3 main.py
     buildCommand: pip3 install -U -r requirements.txt
-    repo: https://github.com/PR0FESS0R-99/FilterBot # optional
+    repo: https://github.com/Learningbots79/BestFilterbot # optional
     region: oregon # optional (defaults to oregon)
     plan: free # optional (defaults to starter)
     branch: Professor-99 # optional (defaults to master)
@@ -21,6 +21,8 @@ services:
       - key: ADMINS
         sync: false
       - key: DATABASE_URI
+        sync: false
+      - key: DATABASE_NAME
         sync: false
       - key: BOT_PICS
         sync: false
