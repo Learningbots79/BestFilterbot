@@ -38,7 +38,7 @@ Add me as admin in your group and start filtering :)
 """
 
 AboutTxT = """
-⭕️ Official Channel : @learningbots79</b>
+⭕️ Official Channel : @movie_file_20</b>
 ⭕️ Developers : @TroJanzHEX 
 ⭕️ Upgrader : @Mo_Tech_YT
 ⭕️ Language : Python3
